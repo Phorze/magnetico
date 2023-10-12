@@ -6,7 +6,6 @@ RUN apk add --no-cache build-base curl git
 RUN go get -u github.com/kevinburke/go-bindata/...
 
 ADD ./Makefile        /magnetico/
-ADD ./pkg             /magnetico/pkg
 ADD ./go.mod          /magnetico/go.mod
 ADD ./cmd/magneticow  /magnetico/cmd/magneticow
 
